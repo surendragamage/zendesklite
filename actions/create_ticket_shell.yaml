@@ -1,0 +1,17 @@
+---
+name: create.ticket
+runner_type: local-shell-script
+description: Creates a Zendesk ticket
+enabled: true
+entry_point: create_ticket_shell.sh
+parameters:
+  subject:
+    type: string
+    description: "A short subject of the ticket"
+    required: true
+    position: 0
+  description:
+    type: string
+    description: "The full description of the ticket"
+    required: true
+    position: 1
