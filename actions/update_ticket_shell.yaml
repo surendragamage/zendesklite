@@ -1,0 +1,22 @@
+---
+name: update.ticket
+runner_type: local-shell-script
+description: Update Zendesk ticket
+enabled: true
+entry_point: update_ticket_shell.sh
+parameters:
+    ticket:
+        type: string
+        description: "Enter Zendesk Ticket ID to add a comment"
+        required: true
+        position: 0
+    comment:
+        type: string
+        description: "Description of the ticket"
+        required: true
+        position: 1
+    status:
+        type: string
+        description: 'Status of the ticket [ Allowed values are "new", "open", "pending", "hold", "solved", or "closed" ]'
+        required: false
+        position: 2
