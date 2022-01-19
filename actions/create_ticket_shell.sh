@@ -4,8 +4,10 @@
 
 SUBJ=$1
 DESC=$2
+STATUS=$1
+TYPE=$2
 
-TICKET='{"ticket": {"subject": "'$SUBJ'","description": "'$DESC'"}}'
+TICKET='{"ticket": {"subject": "'$SUBJ'","description": "'$DESC'","status":"'$STATUS'","type":"'$TYPE'"}}'
 ENDPOINT="https://$SUBDOMAIN.zendesk.com/api/v2/tickets"
 CONTENT_TYPE="Content-Type:application/json"
 
