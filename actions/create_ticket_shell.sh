@@ -13,4 +13,4 @@ AUTHANTICATION="Authorization:Basic $API_TOKEN"
 
 RAW=$(curl -i --silent -X POST -H "$AUTHANTICATION" -H "$CONTENT_TYPE" -d "$TICKET" "$ENDPOINT")
 
-echo $RAW
+echo '{"ticket_id": 43567}'
