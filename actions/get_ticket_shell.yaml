@@ -1,0 +1,12 @@
+---
+name: get.ticket
+runner_type: local-shell-script
+description: Get Zendesk ticket
+enabled: true
+entry_point: get_ticket_shell.sh
+parameters:
+    subject:
+        type: string
+        description: "Zendesk Ticket ID"
+        required: true
+        position: 0
