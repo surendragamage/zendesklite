@@ -25,3 +25,8 @@ parameters:
         description: 'Type of the ticket [ Allowed values are "problem", "incident", "question", or "task" ]'
         required: false
         position: 3
+    priority:
+        type: string
+        description: 'Priority of the ticket [ Allowed values are "urgent", "high", "normal", or "low" ]'
+        required: false
+        position: 4
