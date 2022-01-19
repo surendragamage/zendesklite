@@ -11,6 +11,6 @@ CONTENT_TYPE="Content-Type:application/json"
 
 AUTHANTICATION="Authorization:Basic $API_TOKEN"
 
-RAW=$(curl -i -X POST -H "$AUTHANTICATION" -H "$CONTENT_TYPE" -d "$TICKET" "$ENDPOINT")
+RAW=$(curl -i --silent -X POST -H "$AUTHANTICATION" -H "$CONTENT_TYPE" -d "$TICKET" "$ENDPOINT")
 
 echo $RAW
