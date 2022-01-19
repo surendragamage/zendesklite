@@ -1,7 +1,7 @@
 ---
 name: create.ticket
 runner_type: local-shell-script
-description: Creates a Zendesk ticket
+description: Creates Zendesk ticket
 enabled: true
 entry_point: create_ticket_shell.sh
 parameters:
