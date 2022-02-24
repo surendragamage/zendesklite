@@ -1,0 +1,12 @@
+---
+name: "create_zd_ticket"
+action_ref: "zendesklite.create.ticket"
+description: "Create a zendesk ticket."
+formats:
+    - "zdcreate {{subject}} {{description}} {{status=open}} {{type=incident}} {{priority=normal}}"
+ack:
+    format: "Please wait ..."
+result:
+    format: |
+
+        New ticket created, please check URL: https://magento1544124303.zendesk.com/agent/tickets/{{execution.result.stdout.ticket.id}}
