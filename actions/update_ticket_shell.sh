@@ -5,8 +5,9 @@
 TICKET=$1
 COMMENT=$2
 STATUS=$3
+PUBLIC=$4
 
-BODY='{"ticket": {"status": "'$STATUS'", "comment": { "body": "'$COMMENT'" }}}'
+BODY='{"ticket": {"status": "'$STATUS'", "comment": { "body": "'$COMMENT'", "public": '$PUBLIC' }}}'
 
 ENDPOINT="https://$SUBDOMAIN.zendesk.com/api/v2/tickets/$TICKET"
 CONTENT_TYPE="Content-Type:application/json"

@@ -20,3 +20,9 @@ parameters:
         description: 'Status of the ticket [ Allowed values are "new", "open", "pending", "hold", "solved", or "closed" ]'
         required: false
         position: 2
+    public:
+        type: boolean
+        description: 'Public comment [ Allowed values are "true", "false" ]'
+        required: false
+        default: true
+        position: 3
