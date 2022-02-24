@@ -8,5 +8,9 @@ ack:
     format: "Please wait ..."
 result:
     format: |
-
+        {% if execution.result.stdout.error is not defined %}
         Ticket updated, please check URL: https://magento1544124303.zendesk.com/agent/tickets/{{execution.result.stdout.ticket.id}}
+        {% else %}
+        Ticket not updated, incorrect ticket id.
+        Error: {{execution.result.stdout.error}}
+        {% endif %}
